@@ -7,5 +7,12 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   output: 'server',
-  adapter: vercel(),
+  adapter: vercel({
+    analytics: true,
+    // Configuramos Node.js 20 como runtime (compatible con Vercel)
+    functionPerRoute: false,
+    devImageService: true,
+    // Especificar runtime actualizado
+    runtime: 'nodejs20.x',
+  }),
 });
