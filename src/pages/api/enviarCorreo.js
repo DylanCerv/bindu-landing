@@ -5,6 +5,9 @@ import dotenv from 'dotenv';
 // Cargar variables de entorno
 dotenv.config();
 
+// Indicar que esta ruta es dinámica (necesario para APIs en Astro)
+export const prerender = false;
+
 export const POST = async ({ request }) => {
     try {
       // Capturar los datos del formulario
