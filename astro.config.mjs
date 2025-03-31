@@ -14,6 +14,6 @@ export default defineConfig({
     functionPerRoute: false,
     devImageService: true,
     // Especificar runtime actualizado
-    runtime: 'nodejs20.x',
+    runtime: 'nodejs18.x',
   }),
 });
