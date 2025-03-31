@@ -10,10 +10,10 @@ export default defineConfig({
   output: 'server',
   adapter: vercel({
     includeFiles: ['.env'],
-    maxDuration: 60,
-    analytics: true,
-    functionPerRoute: false,
-    devImageService: true,
-    runtime: 'nodejs20.x',
+    // maxDuration: 60,
+    // analytics: true,
+    // functionPerRoute: false,
+    // devImageService: true,
+    // runtime: 'nodejs20.x',
   }),
 });
