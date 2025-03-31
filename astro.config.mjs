@@ -1,6 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
-import vercel from '@astrojs/vercel/serverless';
+import vercelAdapter from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   // output: 'server',
-  adapter: vercel({
+  adapter: vercelAdapter({
     analytics: true,
     // Configuramos Node.js 20 como runtime (compatible con Vercel)
     functionPerRoute: false,
