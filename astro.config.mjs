@@ -7,7 +7,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  output: 'server',
+  // output: 'server',
   adapter: vercel({
     analytics: true,
     // Configuramos Node.js 20 como runtime (compatible con Vercel)
